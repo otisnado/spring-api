@@ -29,3 +29,6 @@ nbdist/
 
 ### VS Code ###
 **/.vscode/
+
+### Envs files ###
+**/.env
