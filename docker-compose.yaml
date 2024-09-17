@@ -6,8 +6,8 @@ services:
     ports:
       - 8080:8080
     depends_on:
-      mysqldb:
-        condition: service_healthy
+      - mysqldb:
+          condition: service_healthy
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysqldb:3306/${MYSQL_DATABASE}
       - SPRING_DATASOURCE_USERNAME=${MYSQL_USER}
